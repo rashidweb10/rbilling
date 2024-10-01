@@ -38,12 +38,12 @@ Thumbs.db
 *.sql
 
 # Ignore image files
-# *.png
-# *.jpg
-# *.jpeg
-# *.gif
-# *.bmp
-# *.svg
-# *.ico
-# *.tiff
-# *.webp
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.svg
+*.ico
+*.tiff
+*.webp
