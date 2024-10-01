@@ -1,5 +1,5 @@
 <?php
-
+//boot
 const APP_RUN = true;
 
 const APP_BASE_PATH = __DIR__;
