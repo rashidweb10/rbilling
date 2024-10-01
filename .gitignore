@@ -1,5 +1,7 @@
 # Ignore the .env file (environment variables)
 .env
+.htaccess
+config.php
 
 # Ignore log files
 *.log
@@ -8,18 +10,11 @@
 
 # Ignore temp files
 /tmp
-/storage/framework/cache/*
-/storage/framework/sessions/*
-/storage/framework/views/*
+/storage
 
 # Ignore Composer vendor directory
 /vendor
 
-# Ignore Composer lock file (optional, if you prefer to commit it)
-/composer.lock
-
-# Ignore node modules (if you're using npm for frontend)
-/node_modules
 
 # Ignore cPanel and IDE specific files
 *.swp
@@ -32,15 +27,6 @@
 .DS_Store
 Thumbs.db
 
-# Ignore build files (if applicable)
-/public/js/
-/public/css/
-/public/hot
-/public/storage
-
-# Ignore compiled code (optional)
-/bootstrap/cache/*
-
 # Ignore archive files
 *.zip
 *.rar
@@ -52,12 +38,12 @@ Thumbs.db
 *.sql
 
 # Ignore image files
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.bmp
-*.svg
-*.ico
-*.tiff
-*.webp
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
+# *.bmp
+# *.svg
+# *.ico
+# *.tiff
+# *.webp
