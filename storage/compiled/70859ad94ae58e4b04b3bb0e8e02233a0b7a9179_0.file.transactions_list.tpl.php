@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2024-10-02 20:54:25
+/* Smarty version 4.3.0, created on 2024-10-02 21:03:26
   from 'C:\xampp\htdocs\cloudonex-business-suit\ui\theme\default\transactions_list.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_66fd65a92c3579_10283688',
+  'unifunc' => 'content_66fd67c6c53bc1_70067019',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '70859ad94ae58e4b04b3bb0e8e02233a0b7a9179' => 
     array (
       0 => 'C:\\xampp\\htdocs\\cloudonex-business-suit\\ui\\theme\\default\\transactions_list.tpl',
-      1 => 1727882652,
+      1 => 1727882986,
       2 => 'file',
     ),
   ),
@@ -20,36 +20,36 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_66fd65a92c3579_10283688 (Smarty_Internal_Template $_smarty_tpl) {
+function content_66fd67c6c53bc1_70067019 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_178103719066fd65a91b5ac1_52505183', "head");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_153763443966fd67c6b52212_11847749', "head");
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14511858566fd65a91b9465_39794222', "content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_152955984366fd67c6b541f2_99611789', "content");
 ?>
 
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_113093271566fd65a9285fd7_66524745', "script");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_85610427666fd67c6c00cf8_48593711', "script");
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, ((string)$_smarty_tpl->tpl_vars['layouts_admin']->value));
 }
 /* {block "head"} */
-class Block_178103719066fd65a91b5ac1_52505183 extends Smarty_Internal_Block
+class Block_153763443966fd67c6b52212_11847749 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'head' => 
   array (
-    0 => 'Block_178103719066fd65a91b5ac1_52505183',
+    0 => 'Block_153763443966fd67c6b52212_11847749',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -61,12 +61,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block "head"} */
 /* {block "content"} */
-class Block_14511858566fd65a91b9465_39794222 extends Smarty_Internal_Block
+class Block_152955984366fd67c6b541f2_99611789 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_14511858566fd65a91b9465_39794222',
+    0 => 'Block_152955984366fd67c6b541f2_99611789',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -380,12 +380,12 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 /* {/block "content"} */
 /* {block "script"} */
-class Block_113093271566fd65a9285fd7_66524745 extends Smarty_Internal_Block
+class Block_85610427666fd67c6c00cf8_48593711 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'script' => 
   array (
-    0 => 'Block_113093271566fd65a9285fd7_66524745',
+    0 => 'Block_85610427666fd67c6c00cf8_48593711',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -665,9 +665,6 @@ transactions/mass-delete', {
 
                                 for (let i = 0; i < total.length; i++) {
                                     let amount = app.parseAmount(total[i],home_currency,2);
-                                    console.log(total[i]);
-                                    console.log(home_currency);
-                                    console.log(amount);
                                     amount = parseFloat(amount);
                                     
                                     if(amount)
