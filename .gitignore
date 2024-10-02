@@ -11,6 +11,7 @@ config.php
 # Ignore temp files
 /tmp
 /storage
+storage/compiled*
 
 # Ignore Composer vendor directory
 /vendor
