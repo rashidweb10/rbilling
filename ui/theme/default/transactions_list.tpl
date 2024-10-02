@@ -437,9 +437,12 @@
                                     .column( 4 )
                                     .data();
 
+                                    console.log(total);
+
                                 for (let i = 0; i < total.length; i++) {
                                     let amount = app.parseAmount(total[i],home_currency,2);
                                     amount = parseFloat(amount);
+                                    
                                     if(amount)
                                     {
                                         amount_total += amount;

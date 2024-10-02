@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2024-10-02 19:58:20
+/* Smarty version 4.3.0, created on 2024-10-02 20:54:25
   from 'C:\xampp\htdocs\cloudonex-business-suit\ui\theme\default\transactions_list.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_66fd5884cf8521_41013064',
+  'unifunc' => 'content_66fd65a92c3579_10283688',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '70859ad94ae58e4b04b3bb0e8e02233a0b7a9179' => 
     array (
       0 => 'C:\\xampp\\htdocs\\cloudonex-business-suit\\ui\\theme\\default\\transactions_list.tpl',
-      1 => 1727879118,
+      1 => 1727882652,
       2 => 'file',
     ),
   ),
@@ -20,36 +20,36 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_66fd5884cf8521_41013064 (Smarty_Internal_Template $_smarty_tpl) {
+function content_66fd65a92c3579_10283688 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_56513328266fd5884c8c2f0_40419165', "head");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_178103719066fd65a91b5ac1_52505183', "head");
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_178677125466fd5884c8ec65_14548054', "content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14511858566fd65a91b9465_39794222', "content");
 ?>
 
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_36851866266fd5884ce9a68_99645620', "script");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_113093271566fd65a9285fd7_66524745', "script");
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, ((string)$_smarty_tpl->tpl_vars['layouts_admin']->value));
 }
 /* {block "head"} */
-class Block_56513328266fd5884c8c2f0_40419165 extends Smarty_Internal_Block
+class Block_178103719066fd65a91b5ac1_52505183 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'head' => 
   array (
-    0 => 'Block_56513328266fd5884c8c2f0_40419165',
+    0 => 'Block_178103719066fd65a91b5ac1_52505183',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -61,12 +61,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block "head"} */
 /* {block "content"} */
-class Block_178677125466fd5884c8ec65_14548054 extends Smarty_Internal_Block
+class Block_14511858566fd65a91b9465_39794222 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_178677125466fd5884c8ec65_14548054',
+    0 => 'Block_14511858566fd65a91b9465_39794222',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -380,12 +380,12 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 /* {/block "content"} */
 /* {block "script"} */
-class Block_36851866266fd5884ce9a68_99645620 extends Smarty_Internal_Block
+class Block_113093271566fd65a9285fd7_66524745 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'script' => 
   array (
-    0 => 'Block_36851866266fd5884ce9a68_99645620',
+    0 => 'Block_113093271566fd65a9285fd7_66524745',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -661,9 +661,15 @@ transactions/mass-delete', {
                                     .column( 4 )
                                     .data();
 
+                                    console.log(total);
+
                                 for (let i = 0; i < total.length; i++) {
                                     let amount = app.parseAmount(total[i],home_currency,2);
+                                    console.log(total[i]);
+                                    console.log(home_currency);
+                                    console.log(amount);
                                     amount = parseFloat(amount);
+                                    
                                     if(amount)
                                     {
                                         amount_total += amount;
